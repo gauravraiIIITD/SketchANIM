@@ -293,4 +293,4 @@ dependencies:
       - widgetsnbextension==4.0.9
       - yarl==1.9.4
       - zipp==3.17.0
-prefix: /home/gaurav/anaconda3/envs/animation
+prefix: /path/to/anaconda3/envs/animation

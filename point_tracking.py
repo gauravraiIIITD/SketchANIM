@@ -8,7 +8,7 @@ import imageio
 
 from PIL import Image
 import sys
-sys.path.append('/home/gaurav/SketchAnim/')
+sys.path.append('/folder/path/SketchAnim/')
 from co_tracker.cotracker.utils.visualizer import Visualizer, read_video_from_path
 from co_tracker.cotracker.predictor import CoTrackerPredictor
 
@@ -26,7 +26,7 @@ def PointTracking(video_frames,
                   input_points,
                   edges=[],
                   device='cpu',
-                  cotracker_checkpoint='./co_tracker/checkpoints/cotracker_stride_8_wind_16.pth',
+                  cotracker_checkpoint='./co_tracker/checkpoints/cotracker_stride_8_wind_16.pth', # use shape-of-motion for better tracking
                   output_visualise_filepath=None,
                   output_vertices_filepath=None,
                   verbose=False):
